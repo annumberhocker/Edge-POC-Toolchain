@@ -46,6 +46,7 @@ async function createAccount(accountInfo) { // eslint-disable-line no-unused-var
 * @transaction
 */
 async function deleteAccount (accountId) {
+  // This function doesn't work properly.  Need to fix	
   // incomingData: accountId
 
   const namespace = 'org.example.bank';
