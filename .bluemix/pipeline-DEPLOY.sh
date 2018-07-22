@@ -182,7 +182,6 @@ function deploy_composer_rest_server {
     cf set-env ${CF_APP_NAME} COMPOSER_CARD ${BUSINESS_NETWORK_CARD}
     cf set-env ${CF_APP_NAME} COMPOSER_NAMESPACES required
     cf set-env ${CF_APP_NAME} COMPOSER_WEBSOCKETS true
-    cf restage ${CF_APP_NAME}
     popd
 }
 
