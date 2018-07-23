@@ -147,11 +147,8 @@ function create_blockchain_network_card {
 
 function update_blockchain_deploy_status {
     COMPLETED_STEP=$1
-    if [[ "${BLOCKCHAIN_SAMPLE_ID}" = "" ]]
-    then
-        echo trying to update blockchain deploy status but no sample id specified
-        return 0
-    fi
+ 
+ 
     echo updating blockchain deploy status to ${COMPLETED_STEP} at $(date)
     cat << EOF > request.json
 {
